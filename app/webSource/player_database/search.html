@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../uikit/css/uikit.min.css" />
+  <script src="../uikit/js/jquery.min.js"></script>
+  <script src="../uikit/js/uikit.min.js"></script>
+  <script src="../uikit/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="./search.css">
+  <title>プレイヤー検索</title>
+</head>
+<body>
+  <h2 id="title"></h2>
+  <form action="./player.html" class="uk-search uk-search-default" method="get">
+    <a href="" uk-search-icon></a>
+    <input class="uk-search-input" type="search" placeholder="" id="search" name="name">
+  </form>
+  <div class="uk-grid-small uk-text-center uk-child-width-1-2" id="grid" uk-grid></div>
+  <script src="./search.js"></script>
+</body>
+</html>

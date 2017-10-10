@@ -1,0 +1,31 @@
+body{
+  text-align: center;
+  overflow: hidden;
+  position:relative;
+}
+
+.uk-card-default{
+  margin: 0 auto;
+  width: 98%;
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+.uk-subnav > li{
+  width: 98%;
+}
+
+.uk-subnav > ul{
+  text-align: center;
+}
+
+@keyframes slidein {
+  0% {
+    transform: scale(0,0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
