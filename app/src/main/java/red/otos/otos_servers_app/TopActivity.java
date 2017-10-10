@@ -25,7 +25,6 @@ public class TopActivity extends AppCompatActivity {
         web.getSettings().setAllowFileAccessFromFileURLs(true);
         web.getSettings().setAllowUniversalAccessFromFileURLs(true);
         web.loadUrl("file:///android_asset/index.html");
-        web.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
