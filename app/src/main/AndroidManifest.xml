@@ -2,15 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="red.otos.otos_servers_app">
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-
-    <permission
-        android:name="red.otos.otos_servers_app.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-    <uses-permission android:name="red.otos.otos_servers_app.permission.C2D_MESSAGE" />
-    <uses-permission android:name="red.otos.otos_servers_app.c2dm.permission.RECEIVE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
