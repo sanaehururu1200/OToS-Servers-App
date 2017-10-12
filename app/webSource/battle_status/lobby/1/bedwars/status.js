@@ -1,14 +1,8 @@
 $(function(){
   const url = 'http://api.otos.red/BedWars/1/teams.json'; // リクエスト先URL
-  let request = new XMLHttpRequest();
-  request.open('GET', url);
-  request.onreadystatechange = function () {
-    if (request.readyState != 4) {
-      document.getElementById('title').innerText = 'ERROR';
-    } else if (request.status != 200) {
-      document.getElementById('title').innerHTML = '接続失敗 <br> サーバーが落ちている可能性があります';
-    } else {
-      let json = JSON.parse(request.responseText);
+  fetch(url).then(function(response) {
+    return response.json();
+  }).then(function(json) {
       document.getElementById('title').innerHTML = 'BedWars';
       let nav = document.getElementById('nav');
       let switcher = document.getElementById('switcher');
@@ -104,7 +98,5 @@ $(function(){
       card.appendChild(content);
       var br = document.createElement("br");
       document.body.appendChild(br); 
-    }
-  };
-  request.send(null);
+  });
 })
