@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 
 
 public class TopActivity extends AppCompatActivity {
-    
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
